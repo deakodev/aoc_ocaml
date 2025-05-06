@@ -1,5 +1,5 @@
 open Aoc
-open Utils
+open Utils 
 
 let () =
   let args = Sys.argv in
