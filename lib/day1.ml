@@ -36,7 +36,17 @@ include M
 include Day.Make (M)
 
 (* Example input *)
-let example = ""
+let example = "
+  3 4
+  4 3
+  2 5
+  1 3
+  3 9
+  3 3
+"
 
 (* Expect test for example input *)
-let%expect_test _ = run example ; [%expect {| |}]
+let%expect_test _ = run example ; [%expect {|
+  11
+  31
+|}]
